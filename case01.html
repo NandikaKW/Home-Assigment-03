@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case01</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .box {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top-left {
+            top: 0;
+            left: 0;
+            background-color: red;
+        }
+
+        .top-right {
+            top: 0;
+            right: 0;
+            background-color: green;
+        }
+
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+            background-color: purple;
+        }
+
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+            background-color: yellow;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .Mid-box, .Middle-box, .Mid-Circle {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .Mid-box {
+            background-color: red;
+            width: 50px;
+            height: 50px;
+        }
+
+        .Middle-box {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+        }
+
+        .Mid-Circle {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .top-left-circle, .top-right-circle, .bottom-right-circle, .bottom-left-circle {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #f3f0f0;
+        }
+
+        .top-left-circle {
+            left: 0;
+            top: 0;
+            border-radius: 0 0 200px 0;
+        }
+
+        .top-right-circle {
+            right: 0;
+            top: 0;
+            border-radius: 0 0 0 200px;
+        }
+
+        .bottom-right-circle {
+            right: 0;
+            bottom: 0;
+            border-radius: 200px 0 0 0;
+        }
+
+        .bottom-left-circle {
+            left: 0;
+            bottom: 0;
+            border-radius: 0 200px 0 0;
+        }
+
+        .semi-top-circle, .semi-bottom-circle {
+            position: absolute;
+            width: 150px;
+            height: 75px;
+            background-color: white;
+            z-index: 10;
+            transform: translateX(-50%);
+            left: 50%;
+        }
+
+        .semi-top-circle {
+            border-radius: 0 0 200px 200px;
+            top: 0;
+        }
+
+        .semi-bottom-circle {
+            border-radius: 200px 200px 0 0;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="semi-top-circle"></div>
+    <div class="semi-bottom-circle"></div>
+    <div class="box top-left">
+        <div class="top-left-circle"></div>
+        <div class="circle">
+            <div class="Mid-box"></div>
+        </div>
+    </div>
+    <div class="box top-right">
+        <div class="top-right-circle"></div>
+        <div class="circle">
+            <div class="Mid-box"></div>
+        </div>
+    </div>
+    <div class="box bottom-right">
+        <div class="bottom-right-circle"></div>
+        <div class="circle">
+            <div class="Mid-box"></div>
+        </div>
+    </div>
+    <div class="box bottom-left">
+        <div class="bottom-left-circle"></div>
+        <div class="circle">
+            <div class="Mid-box"></div>
+        </div>
+    </div>
+    <div class="Middle-box">
+        <div class="Mid-Circle">
+        </div>
+    </div>
+
+</div>
+</body>
+
+</html>
