@@ -28,7 +28,7 @@
             background-color: red;
         }
         #section2{
-            background-color: lightblue;
+            background-color: blue;
         }
         #div2{
             background-color: darkblue;
@@ -56,6 +56,18 @@
             left: 10px;
             margin: auto;
 
+        }
+        p{
+            font-size: 250px;
+            font-weight: bolder;
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
         }
 
     </style>
