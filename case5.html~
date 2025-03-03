@@ -12,6 +12,8 @@
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, 1fr);
             border: 2px solid #0b0b0b;
+            /*position: relative;*/
+            /*left: 200px;*/
             position: fixed;
         }
         #box-1{
